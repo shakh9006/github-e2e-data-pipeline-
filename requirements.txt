@@ -1,0 +1,19 @@
+# HTTP requests
+requests==2.32.4
+
+# Environment variables
+python-dotenv==1.1.1
+
+# Data processing
+pandas==2.1.4
+pyarrow==14.0.1
+
+# MinIO S3 client
+minio==7.2.0
+
+# Airflow Providers (совместимые с Airflow 2.10.5)
+apache-airflow-providers-postgres==5.6.1
+
+# Database connectivity (совместимые с Airflow 2.10.5)
+sqlalchemy>=1.4.36,<2.0
+psycopg2-binary==2.9.10
