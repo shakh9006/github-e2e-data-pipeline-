@@ -1,4 +1,4 @@
-# GitHub API Data Pipeline
+# GitHub End To End Data Pipeline
 
 A comprehensive **ETL (Extract, Transform, Load) data pipeline** for collecting, processing, and analyzing GitHub repository data. This project demonstrates modern data engineering practices using Apache Airflow for orchestration, PostgreSQL for data warehousing, MinIO for object storage, and Metabase for business intelligence.
 
@@ -25,7 +25,7 @@ _The complete data flow from GitHub API through ETL processing to business intel
 
 ### Result
 
-![DAG Dependencies](docs/images/dag-dependencies.png)
+![DAG Dependencies](docs/images/result.png)
 
 _Airflow DAG dependency graph showing the orchestrated data pipeline flow_
 
@@ -231,65 +231,3 @@ The pipeline automatically configures the following connections:
 
 - **postgres_dwh**: PostgreSQL data warehouse connection
 - **minio**: S3-compatible object storage connection
-
-### Customization Options
-
-- **API Rate Limiting**: Adjust `GITHUB_REQUEST_TIMEOUT` for API request intervals
-- **Data Retention**: Modify date ranges in DAG configurations
-- **Resource Allocation**: Update Docker Compose memory/CPU limits
-
-## 📈 Monitoring & Observability
-
-### Airflow Features
-
-- **Task Success/Failure Tracking**: Monitor pipeline health in Airflow UI
-- **Retry Logic**: Automatic retry with exponential backoff
-- **Email Alerts**: Configure SMTP settings for notifications
-- **Task Dependencies**: Visual DAG representation
-
-### Logging
-
-- **Centralized Logs**: All task logs stored in `./logs/` directory
-- **Structured Logging**: JSON formatted logs for easy parsing
-- **Log Rotation**: Automatic cleanup of old log files
-
-## 🚀 Future Enhancements
-
-### Planned Features
-
-- [ ] **Data Quality Checks**: Great Expectations integration
-- [ ] **CI/CD Pipeline**: GitHub Actions for automated testing
-- [ ] **Real-time Processing**: Kafka integration for streaming data
-- [ ] **Advanced Analytics**: dbt for complex transformations
-- [ ] **Kubernetes Deployment**: Helm charts for production deployment
-
-### Scalability Improvements
-
-- [ ] **Partitioning**: Date-based table partitioning for better performance
-- [ ] **Caching**: Redis caching for frequently accessed data
-- [ ] **Data Lake**: Delta Lake integration for ACID transactions
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Apache Airflow Community** for the excellent orchestration platform
-- **GitHub API** for providing comprehensive repository data
-- **MinIO Team** for the S3-compatible object storage solution
-- **Metabase** for the intuitive BI platform
-
----
-
-**Built with ❤️ by [Your Name]**
-
-_This project demonstrates modern data engineering practices and serves as a reference implementation for building scalable ETL pipelines._
