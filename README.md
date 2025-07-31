@@ -231,9 +231,3 @@ The pipeline automatically configures the following connections:
 
 - **postgres_dwh**: PostgreSQL data warehouse connection
 - **minio**: S3-compatible object storage connection
-
-### Customization Options
-
-- **API Rate Limiting**: Adjust `GITHUB_REQUEST_TIMEOUT` for API request intervals
-- **Data Retention**: Modify date ranges in DAG configurations
-- **Resource Allocation**: Update Docker Compose memory/CPU limits
