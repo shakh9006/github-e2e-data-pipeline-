@@ -1,7 +1,6 @@
-import os
-
 from datetime import timedelta
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 
@@ -12,7 +11,6 @@ GITHUB_API_HEADERS = {
     "Authorization": f"token {ACCESS_TOKEN}",
     "Accept": "application/vnd.github.v3+json"
 }
-
 # API Request timeout between requests (seconds)
 GITHUB_REQUEST_TIMEOUT = int(os.getenv("GITHUB_REQUEST_TIMEOUT", "5"))
 
