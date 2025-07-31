@@ -25,7 +25,7 @@ _The complete data flow from GitHub API through ETL processing to business intel
 
 ### Result
 
-![DAG Dependencies](docs/images/dag-dependencies.png)
+![DAG Dependencies](docs/images/result.png)
 
 _Airflow DAG dependency graph showing the orchestrated data pipeline flow_
 
